@@ -1,0 +1,43 @@
+﻿@model LabPractice.Models.Student
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Edit Record</title>
+</head>
+<body class="container">
+    <form action="/Students/Edit" method="post">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="form-control" type="text" name="Name" value="@Model.Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="form-control" type="text" name="Email" value="@Model.Email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="form-control" type="text" name="Course" value="@Model.Course" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn btn-info">Update Record</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </form>
+</body>
+</html>
